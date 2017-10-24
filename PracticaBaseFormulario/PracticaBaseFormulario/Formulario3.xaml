@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaBaseFormulario.Formulario3">
+    <Grid BackgroundColor="DarkSalmon">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">Correo</Label>
+        <Label Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center">Github</Label>
+
+        <Entry x:Name="VCorreo" Keyboard="Email" Placeholder="ej. miguel123@dominio.com" Grid.Column="1" Grid.Row="1" VerticalOptions="Center"></Entry>
+        <Entry x:Name="VGithub" Keyboard="Url" Grid.Column="1" Grid.Row="2" VerticalOptions="Center"></Entry>
+
+        <Button Grid.Column="1" Grid.Row="5" Text="Registrar" Clicked="Button_Clicked"></Button>
+        <Label Grid.Column="0" Grid.Row="0" HorizontalOptions="Center" 
+         VerticalOptions="Center" Text="DATOS SOCIALES"
+         Rotation="-15"
+         IsVisible="true"
+         FontSize="Large"
+         FontAttributes="Bold"
+         TextColor="Aqua" />
+
+
+
+    </Grid>
+</ContentPage>

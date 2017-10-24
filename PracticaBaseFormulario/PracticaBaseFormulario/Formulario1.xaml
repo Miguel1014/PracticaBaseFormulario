@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaBaseFormulario.Formulario1">
+    <Grid BackgroundColor="Beige">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">Nombre(s)</Label>
+        <Label Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center">Apellidos</Label>
+        <Label Grid.Column="0" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center">Telefono</Label>
+        <Label Grid.Column="0" Grid.Row="4" HorizontalOptions="Center" VerticalOptions="Center">Dirección</Label>
+
+
+
+
+
+
+        <Entry Keyboard="Text" Grid.Column="1" Grid.Row="1" VerticalOptions="Center" x:Name="VNombre" x:FieldModifier="public" ></Entry>
+        <Entry Keyboard="Text" Grid.Column="1" Grid.Row="2" VerticalOptions="Center" x:Name="VApellido"></Entry>
+        <Entry Keyboard="Telephone" Grid.Column="1" Grid.Row="3" VerticalOptions="Center" x:Name="VTelefono" TextChanged="VTelefono_TextChanged"></Entry>
+        <Entry Keyboard="Text" Grid.Column="1" Grid.Row="4" VerticalOptions="Center" x:Name="VDireccion"></Entry>
+        <Button Grid.Column="1" Grid.Row="5" Text="Siguiente" Clicked="Button_Clicked"></Button>
+        
+        
+       
+        
+        
+        
+       
+        <Label Grid.Column="0" Grid.Row="0" HorizontalOptions="Center" 
+         VerticalOptions="Center" Text="DATOS PERSONALES"
+         Rotation="-15"
+         IsVisible="true"
+         FontSize="Large"
+         FontAttributes="Bold"
+         TextColor="Aqua" />
+
+
+
+    </Grid>
+</ContentPage>

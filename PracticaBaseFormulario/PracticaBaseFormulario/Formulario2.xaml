@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaBaseFormulario.Formulario2">
+    <Grid BackgroundColor="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">Carrera</Label>
+        <Label Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center">Semestre</Label>
+        <Label Grid.Column="0" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center">Matricula</Label>
+
+        <Picker x:Name="picker" Title="Selecciona tu carrera" Grid.Column="1" Grid.Row="1" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center">
+           
+        </Picker>
+
+        <Picker x:Name="picker1" Title="Selecciona tu semestre" Grid.Column="1" Grid.Row="2" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center">
+            
+        </Picker>
+
+        <Entry x:Name="VMatricula" Keyboard="Numeric" Placeholder="XXXXXXXXXXX" Grid.Column="1" Grid.Row="3" VerticalOptions="Center"></Entry>
+
+        <Button Grid.Column="1" Grid.Row="5" Text="Siguiente" Clicked="Button_Clicked"></Button>
+
+
+
+
+        <Label Grid.Column="0" Grid.Row="0" HorizontalOptions="Center" 
+         VerticalOptions="Center" Text="DATOS ESCOLARES"
+         Rotation="-15"
+         IsVisible="true"
+         FontSize="Large"
+         FontAttributes="Bold"
+         TextColor="Aqua" />
+
+
+
+    </Grid>
+
+</ContentPage>
